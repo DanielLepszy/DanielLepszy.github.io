@@ -42,22 +42,22 @@
         "correctAnswerId": "B"
     },
     {
-        "QuestionTitle": "Kto według Pana/Pani spełnia wymagania do obecnego stanowiska pracy?",
+        "QuestionTitle": "Kogo chciałby Pan/Pani spotkać w firmie na nowym stanowisku juniorskim?",
         "answers": [{
             "id": "A",
-            "answerTitle": "Violetta Villas"
+            "answerTitle": "Violette Villas"
         },
         {
             "id": "B",
-            "answerTitle": "Elvis Presley"
+            "answerTitle": "Elvisa Presleya"
         },
         {
             "id": "C",
-            "answerTitle": "Daniel Lepszy"
+            "answerTitle": "Daniela Lepszy"
         },
         {
             "id": "D",
-            "answerTitle": "Mark Zuckerberg"
+            "answerTitle": "Marka Zuckerberga"
         }
         ],
         "correctAnswerId": "C"
