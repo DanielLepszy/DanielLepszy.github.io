@@ -1,0 +1,66 @@
+{
+    "Questions": [{
+        "QuestionTitle": "Jak ma na imię osoba, którą Pan/Pani zaprosi na najbliższą rozmowę kwalifikacyjną?",
+        "answers": [{
+            "id": "A",
+            "answerTitle": "Donald John Trump"
+        },
+        {
+            "id": "B",
+            "answerTitle": "Bill Gates"
+        },
+        {
+            "id": "C",
+            "answerTitle": "Daniel Lepszy"
+        },
+        {
+            "id": "D",
+            "answerTitle": "Władimir Putin"
+        }
+        ],
+        "correctAnswerId": "C"
+    },
+    {
+        "QuestionTitle": "Kto cechuje się największa determinacja do nauki i zdobywania nowej wiedzy w tworzeniu oprogramowania",
+        "answers": [{
+            "id": "A",
+            "answerTitle": "Brad Pitt "
+        },
+        {
+            "id": "B",
+            "answerTitle": "Daniel Lepszy "
+        },
+        {
+            "id": "C",
+            "answerTitle": "Hugh Jackman "
+        },
+        {
+            "id": "D",
+            "answerTitle": "Megan Fox "
+        }
+        ],
+        "correctAnswerId": "B"
+    },
+    {
+        "QuestionTitle": "Kto według Pana/Pani jest spełnia wymagania do obecnego stanowiska pracy?",
+        "answers": [{
+            "id": "A",
+            "answerTitle": "Violetta Villas"
+        },
+        {
+            "id": "B",
+            "answerTitle": "Elvis Presley"
+        },
+        {
+            "id": "C",
+            "answerTitle": "Daniel Lepszy"
+        },
+        {
+            "id": "D",
+            "answerTitle": "Mark Zuckerberg"
+        }
+        ],
+        "correctAnswerId": "C"
+    }
+    ]
+}

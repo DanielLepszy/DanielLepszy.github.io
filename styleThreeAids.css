@@ -1,0 +1,117 @@
+.phoneStyles
+{
+    position: absolute;
+    top:28%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-style: outset ;
+    border-width: 4px;
+    border-color: black;
+    background-color: #0D2034;
+    border-radius: 10%;
+    opacity: 0.9
+}
+
+.phoheNumberStyles
+{
+    font-size:25px;
+     color:white ;
+     line-height:5px ;
+     font-weight:bold ;
+     padding:10px ;
+}
+
+.publicVotes
+{
+    width:50%;
+    /*height:37%;*/
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:2px solid white;
+    background-color:#1f1f38;
+    border-radius:5%;
+    opacity:0.9;
+   
+}
+.publicVoteChart
+{
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    margin:3%;
+    padding:5px;
+}
+.publicVoteRowChart
+{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    /*height:10%;*/
+    
+}
+.publicVoteAnswers
+{
+    color: gold;
+    font-weight: bold;
+    width:5%;
+    height:10%;
+    margin:3px;
+    font-size:110%;
+    padding-top:4%
+    
+}
+.publicVoteAnswersPercentage
+{
+    color:#1f1f38;
+    font-size:120%;
+    position:absolute;
+    left:50%;
+    font-weight: bold;
+    width:10%;
+}
+.publicVoteProperAnswer
+{
+    border:3px solid #e5e5e5;
+    background-color:#cabce0;
+    border-radius:15%;
+    /*height:60%;*/
+    width:1%;
+    margin-left:5%;
+   
+}
+.properChart
+{
+    animation-name:animationChart;
+    animation-duration:2s;
+    width:90%;
+}
+@keyframes animationChart {
+    from {width:1%}
+    to {width:90%}
+    }
+ 
+.usedAidStyle
+{
+opacity:0.45;
+cursor: default;
+pointer-events: none;
+}
+.notUsedAidStyle
+{
+opacity:1;
+cursor: hand;
+pointer-events: auto;
+}
+.blockUsingAid
+{
+opacity:0.45;
+cursor: default;
+pointer-events: none;  
+}
+
