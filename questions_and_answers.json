@@ -21,7 +21,7 @@
         "correctAnswerId": "C"
     },
     {
-        "QuestionTitle": "Kto cechuje się największa determinacja do nauki i zdobywania nowej wiedzy w tworzeniu oprogramowania",
+        "QuestionTitle": "Kto cechuje się największa determinacja do zdobywania nowej wiedzy w tworzeniu oprogramowania",
         "answers": [{
             "id": "A",
             "answerTitle": "Brad Pitt "
@@ -42,7 +42,7 @@
         "correctAnswerId": "B"
     },
     {
-        "QuestionTitle": "Kto według Pana/Pani jest spełnia wymagania do obecnego stanowiska pracy?",
+        "QuestionTitle": "Kto według Pana/Pani spełnia wymagania do obecnego stanowiska pracy?",
         "answers": [{
             "id": "A",
             "answerTitle": "Violetta Villas"
