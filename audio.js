@@ -6,7 +6,7 @@ function playQuestionFocusMusic() {
     focusMusicPlayer.play()
 };
 
-function playLastQuestionFocusMusic(){
+function playLastQuestionFocusMusic() {
     focusMusicPlayer = new Audio('Sounds/lastFocus.mp3')
     focusMusicPlayer.loop = true
     focusMusicPlayer.play()
@@ -26,7 +26,17 @@ function playAudio(url, didEndCallback) {
     // audio.loop = false;
     // audio.play();
     // audio.onended = didEndCallback
-    createjs.Sound.registerSound(url, "x");
-    var audio = createjs.Sound.play("x");
-    audio.on('complete',didEndCallback,this);
+
+    // createjs.Sound.registerSound(url, "x");
+    // var audio = createjs.Sound.play("x");
+    // audio.on('complete',didEndCallback,this);
+
+    var sound = new Howl({
+        src: [url],
+        autoplay: true,
+        loop: false,
+        volume: 1,
+        onend: didEndCallback
+    });
+    sound.play();
 };
