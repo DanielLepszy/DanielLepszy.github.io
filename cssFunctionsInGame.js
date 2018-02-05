@@ -13,11 +13,13 @@ function gameInformation() {
     $('.icon').attr('src', 'Images/backarrow.png');
     $('.website').attr('href', '');
 
-    $('#startGame').html('Prosta aplikacja webowa bazująca na słynnej grze "Milionerzy".<br> ' +
-        'Zasady gry są proste: grasz dopóki nie wygrasz głównej nagrody - CV :).<br>Można korzystać tylko z jednego koła ratunkowego podczas danego pytania.<br>' +
-        'Pamiętaj, że pytania z pozoru wydają się łatwe.<br><br> Powodzenia ! <br><br>Prawa autorskie:<br>'+ 
-        '- Pliki MP3 (http://www.kakofonia.pl/PLtele.php)<br>'+
-        '- Pliki PNG (http://www.studios40.fr/news/?id=52)');
+    $('#startGame').html('A simple web application based on the famous "Millionaire" game.<br> ' +
+        'The rules of the game are simple: you play until you win :). <br>You can only use one lifeline during a given question.<br>' +
+        'Remember that the questions seem to be easy.<br><br> Good Luck ! <br><br>Copytight:<br>'+ 
+        '- MP3 FILES ((Personal Boards listed with "Personal" rights include sounds that can be used for anything that does NOT'+
+        ' result in financial gain. This can include (but not necessarily be limited to) school activities, personal enjoyment,'+
+        'shows, events, parties, plays, etc.)<br>'+
+        '- PNG FILES (pixabay.com)');
 
     $('#startGame').addClass('gameInformationsStyles');
 }
@@ -27,7 +29,8 @@ function gameAward() {
     $('.firstOptions').remove();
     $('.icon').attr('src', 'Images/backarrow.png');
     $('.website').attr('href', '');
-
+    $('#startGame').html('<a href ="https://drive.google.com/file/d/1dLn9U6Xq-_HsvsphC_xVNGfZtIYxro7a/view?usp=sharing">'+
+    ' <img src="Images/getMyCV.png" alt="myCV"></a>');
     $('#startGame').addClass('gameAwardsStyles');
 }
 //Code after begin game//

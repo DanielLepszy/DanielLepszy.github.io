@@ -25,12 +25,6 @@ function subscribeOnCorectAnswerSelected() {
         }, 25000);
 }
 
-// function unblockUseLifLinesDuringAnswers() {
-//     setTimeout(function () {
-//         $("#getAid img").removeClass('usedAidStyle');
-//         $("#getAid img").addClass('notUsedAidStyle');
-//     }, 24000);
-// }
 function onStartGame() {
     fetchQuestions()
     currentQuestion = boxOfQuestions.pop()
@@ -57,7 +51,8 @@ function finishGame() {
         $('#allAnswers div').remove();
         $('#getAid').remove();
         $('#toWin').remove();
-        $('#allAnswers').html('<a><img id="myCV" src="Images/pobrane.png"></a>');
+        $('body').css({'background':'url(Images/mainBackground.png','background-size':'cover'});
+        $('#allAnswers').html('<a><img id="myCV" src="Images/pdfCVLogo.png"></a>');
         $('#allAnswers').addClass('rewardsDiv');
         $('#allAnswers img').addClass('imageCV');
         $("#allAnswers").click(openCV);
@@ -126,11 +121,11 @@ function animateCorrectAnswerSelection(onAnimationCompleted) { // Parametr przek
         'color': '000000',
     }, 400);
     descreaseVolumeQuestionFocusMusic();
-    playAudio('Sounds/zgroza.mp3', function () {
+    playAudio('Sounds/hesitationMusic.mp3', function () {
         $("#answer" + answer.id).animate({
             'backgroundColor': '#23E047',
         }, 300);
-        playAudio('Sounds/dobraodpowiedz.mp3', function () {
+        playAudio('Sounds/properAnswers.mp3', function () {
             afterCorectAnswerSelectedAnimation(answer, onAnimationCompleted);
         })
     });
@@ -145,7 +140,7 @@ function afterCorectAnswerSelectedAnimation(answer, onAnimationCompleted) {
         playAudio('Sounds/lastAnswer.mp3')
         finishGame()
     } else {
-        playAudio('Sounds/nowepytanie.mp3', function () {
+        playAudio('Sounds/newQuestion.mp3', function () {
             onAnimationCompleted();
         });
     }
@@ -187,7 +182,7 @@ function onFriendAidPhonePressed() {
     aidAudio();
     setTimeout(function () {
         isAidUsedInThatRound = true;
-        $('#toWin').html('<p>Przyjaciel mówi:</p><p>To z pewnością Daniel Lepszy !</p>');
+        $('#toWin').html('<p>Friend said:</p><p>It is definitely Daniel Lepszy !</p>');
         $('#toWin').addClass('phoneStyles');
         $('#toWin p').addClass('phoheNumberStyles');
         $("#getAid img:nth-child(3)").addClass('usedAidStyle');
@@ -244,7 +239,7 @@ function showQuestionAndAnswers() {
 }
 function showAlertAboutAmountOfAidOnRound() {
     $('body').append('<div class="alertAboutAmountofAid"> <p>' +
-        'Sorry, ale użyłeś już jednego koła ratunkowego w tym pytaniu</p></div>');
+        'Sorry, but you used lifeline in that round.</p></div>');
     $('.alertAboutAmountofAid').addClass('alertAboutAidInRound');
     $('.alertAboutAmountofAid p').addClass('alertAidContent');
 }

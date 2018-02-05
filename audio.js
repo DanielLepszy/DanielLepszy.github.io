@@ -1,6 +1,7 @@
 var focusMusicPlayer = new Audio('Sounds/FocusSound.mp3');
 focusMusicPlayer.loop = true
 
+
 function playQuestionFocusMusic() {
     focusMusicPlayer.play()
 };

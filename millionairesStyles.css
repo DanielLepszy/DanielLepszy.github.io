@@ -1,6 +1,6 @@
 body 
 {
-    background:url('Images/tlo.png');
+    background:url('Images/navyBlueBackground.png');
     background-size:cover;
 }
 #mainLogo
@@ -71,12 +71,24 @@ transition: all 0.6s ease-in-out;
  {
     font-size:25px;
  } 
+    .positionOfMainQuestion
+    {
+        font-size: 20px;
+    }
 }
 @media screen and (min-width: 0px) and (max-width: 531px) {  
     .firstOptions
  {
     font-size:15px;
  } 
+    #mainLogo
+ {
+     transform:scale(0.8,0.8);
+ }
+    .icon
+ {
+     display:none;
+ }
 }
 /* Finish Game function  */ 
 .rewardsDiv

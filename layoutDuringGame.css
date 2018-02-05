@@ -1,6 +1,6 @@
 .imageBackground
 {
-    background:url(Images/background2.png);
+    background:url(Images/CodeBackground.png);
     background-size: cover;
 }
 .positionsOfThreeAids
@@ -30,7 +30,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0px
+    margin: 0px;
+    text-align: center;
+    padding:3px;
 }
 .positionOfContentQuestion
 {
@@ -99,5 +101,107 @@ text-align: center;
 font-weight: bold;
 background-color:black;
 font-size:23px;
+}
+
+@media screen and (min-width:128px) and (max-width: 360px) {
+    body
+    {
+        position: relative;
+    }
+    .positionsOfThreeAids
+    {   
+        position:absolute;
+        transform:translate(25%,0%) scale(0.7,0.7);
+    }  
+    .positionOfMainQuestion
+    {
+        font-size: 20px;
+        padding:5px;
+        text-align: center;
+    }
+    .positionOfAnswers
+    {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .styleOfFirstContentAnswers
+    {
+        font-size: 20px;
+    }
+    .styleOfSecondContentAnswers
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:361px) and (max-width: 415px) {
+    body
+    {
+        position: relative;
+    }
+    .positionsOfThreeAids
+    {   
+        position:absolute;
+        transform:scale(0.7,0.7);  
+        left:-15%;
+    }  
+    .positionOfMainQuestion
+    {
+        font-size: 20px;
+        padding:5px;
+        text-align: center;
+    }
+    .positionOfAnswers
+    {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .styleOfFirstContentAnswers
+    {
+        font-size: 20px;
+    }
+    .styleOfSecondContentAnswers
+    {
+        font-size: 20px;
+    }
+    .publicVoteAnswersPercentage
+    {
+        color:#6bc032;
+        font-size:120%;
+        position:absolute;
+        left:50%;
+        font-weight: bold;
+        width:10%;
+    }
+}
+@media screen and (min-width:416px) and (max-width: 768px) {  
+    .positionOfMainQuestion
+    {
+        font-size: 20px;
+        padding:3px;
+        text-align: center;
+    }
+    .positionOfAnswers
+    {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .styleOfFirstContentAnswers
+    {
+        font-size: 20px;
+    }
+    .styleOfSecondContentAnswers
+    {
+        font-size: 20px;
+    }
+    .positionsOfThreeAids
+    {
+        transform:scale(0.8,0.8);    
+        right:10px;
+        left: auto;
+     
+    }
 }
 
