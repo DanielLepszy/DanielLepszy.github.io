@@ -22,8 +22,11 @@ function increaseVolumeQuestionFocusMusic() {
 
 function playAudio(url, didEndCallback) {
 
-    var audio = new Audio(url);
-    audio.loop = false;
-    audio.play();
-    audio.onended = didEndCallback
+    // var audio = new Audio(url);
+    // audio.loop = false;
+    // audio.play();
+    // audio.onended = didEndCallback
+    createjs.Sound.registerSound(url, "x");
+    var audio = createjs.Sound.play("x");
+    audio.on('complete',didEndCallback,this);
 };
