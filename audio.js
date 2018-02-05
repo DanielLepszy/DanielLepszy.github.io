@@ -1,6 +1,11 @@
-var focusMusicPlayer = new Audio('Sounds/FocusSound.mp3');
-focusMusicPlayer.loop = true
-
+var focusMusicPlayer = new Howl({
+    src: ['Sounds/FocusSound.mp3'],
+    autoplay: true,
+    loop: true,
+    volume: 1,
+});
+// new Audio('Sounds/FocusSound.mp3');
+// focusMusicPlayer.loop = true
 
 function playQuestionFocusMusic() {
     focusMusicPlayer.play()
