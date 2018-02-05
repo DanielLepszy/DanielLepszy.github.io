@@ -42,7 +42,7 @@ function fetchQuestions() {
     boxOfQuestions = allQuestions.Questions
 };
 function openCV() {
-    window.open('https://drive.google.com/file/d/1dLn9U6Xq-_HsvsphC_xVNGfZtIYxro7a/view?usp=sharing');
+    window.open('https://drive.google.com/file/d/18YladwZgR3usMyWCuBpBIza5rTTiy7Rb/view?usp=sharing');
 }
 
 function finishGame() {

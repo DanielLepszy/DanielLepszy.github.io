@@ -29,7 +29,7 @@ function gameAward() {
     $('.firstOptions').remove();
     $('.icon').attr('src', 'Images/backarrow.png');
     $('.website').attr('href', '');
-    $('#startGame').html('<a href ="https://drive.google.com/file/d/1dLn9U6Xq-_HsvsphC_xVNGfZtIYxro7a/view?usp=sharing">'+
+    $('#startGame').html('<a href ="https://drive.google.com/file/d/18YladwZgR3usMyWCuBpBIza5rTTiy7Rb/view?usp=sharing">'+
     ' <img src="Images/getMyCV.png" alt="myCV"></a>');
     $('#startGame').addClass('gameAwardsStyles');
 }
