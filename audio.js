@@ -1,13 +1,14 @@
-var focusMusicPlayer = new Howl({
-    src: ['Sounds/FocusSound.mp3'],
-    autoplay: true,
-    loop: true,
-    volume: 1,
-});
+
 // new Audio('Sounds/FocusSound.mp3');
 // focusMusicPlayer.loop = true
 
 function playQuestionFocusMusic() {
+    var focusMusicPlayer = new Howl({
+        src: ['Sounds/FocusSound.mp3'],
+        autoplay: true,
+        loop: true,
+        volume: 1,
+    });
     focusMusicPlayer.play()
 };
 
