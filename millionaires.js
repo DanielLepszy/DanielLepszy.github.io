@@ -22,7 +22,7 @@ function subscribeOnCorectAnswerSelected() {
     $('#allAnswers').one('click', onCorrectAnswerSelected);
         setTimeout(function () {
             $("#getAid img").removeClass('blockUsingAid')
-        }, 18000);
+        }, 5000);
 }
 
 function onStartGame() {
