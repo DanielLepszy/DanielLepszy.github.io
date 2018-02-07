@@ -34,7 +34,7 @@ function playAudio(url, didEndCallback) {
         src: [url],
         autoplay: true,
         loop: false,
-        volume: 1,
+        volume: 0.2,
         onend: didEndCallback
     });
     sound.play();
