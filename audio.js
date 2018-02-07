@@ -11,7 +11,7 @@ function playQuestionFocusMusic() {
 };
 
 function playLastQuestionFocusMusic() {
-    focusMusicPlayer.stop()
+    focusMusicPlayer.stop();
     var focusMusicPlayer = new Howl({
         src: ['./Sounds/lastFocus.mp3'],
         autoplay: true,
@@ -23,7 +23,7 @@ function playLastQuestionFocusMusic() {
 }
 
 function descreaseVolumeQuestionFocusMusic() {
-    focusMusicPlayer.volume = 0;
+    focusMusicPlayer.volume = 0.0;
 }
 
 function increaseVolumeQuestionFocusMusic() {
