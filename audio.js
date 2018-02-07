@@ -1,36 +1,36 @@
-var focusMusicPlayer = new Audio('Sounds/FocusSound.mp3');
-focusMusicPlayer.loop = true
-
+var focusMusicPlayer = undefined
 
 function playQuestionFocusMusic() {
+    focusMusicPlayer = new Howl({
+        src: ['./Sounds/FocusSound.mp3'],
+        autoplay: true,
+        loop: true,
+        volume: 1
+    });
     focusMusicPlayer.play()
 };
 
 function playLastQuestionFocusMusic() {
-    focusMusicPlayer = new Audio('Sounds/lastFocus.mp3')
-    focusMusicPlayer.loop = true
+    focusMusicPlayer.stop();
+    var focusMusicPlayer = new Howl({
+        src: ['./Sounds/lastFocus.mp3'],
+        autoplay: true,
+        loop: true,
+        volume: 1,
+        onend: didEndCallback
+    });
     focusMusicPlayer.play()
 }
 
 function descreaseVolumeQuestionFocusMusic() {
-    focusMusicPlayer.volume = 0.0;
+    focusMusicPlayer.stop();
 }
 
 function increaseVolumeQuestionFocusMusic() {
-    focusMusicPlayer.volume = 1;
+    focusMusicPlayer.play();
 }
 
 function playAudio(url, didEndCallback) {
-
-    // var audio = new Audio(url);
-    // audio.loop = false;
-    // audio.play();
-    // audio.onended = didEndCallback
-
-    // createjs.Sound.registerSound(url, "x");
-    // var audio = createjs.Sound.play("x");
-    // audio.on('complete',didEndCallback,this);
-
     var sound = new Howl({
         src: [url],
         autoplay: true,
