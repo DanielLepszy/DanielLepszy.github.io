@@ -16,7 +16,7 @@ function playLastQuestionFocusMusic() {
         autoplay: true,
         loop: true,
         volume: 1,
-        onend: didEndCallback
+       // onend: didEndCallback
     });
     focusMusicPlayer.play()
 }
