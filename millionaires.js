@@ -98,7 +98,7 @@ function onCorrectAnswerSelected() {
             currentQuestion = boxOfQuestions.pop();
             if (boxOfQuestions == 0) {
                 playLastQuestionFocusMusic();
-                descreaseVolumeQuestionFocusMusic();;
+                descreaseVolumeQuestionFocusMusic();
             }
             increaseVolumeQuestionFocusMusic();
             showCurrentAnswers(currentQuestion);
