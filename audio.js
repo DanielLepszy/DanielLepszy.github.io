@@ -10,7 +10,7 @@ function playQuestionFocusMusic() {
     focusMusicPlayer.play()
 };
 
-function playLastQuestionFocusMusic(didEndCallback) {
+function playLastQuestionFocusMusic() {
     focusMusicPlayer.stop()
     var focusMusicPlayer = new Howl({
         src: ['./Sounds/lastFocus.mp3'],
