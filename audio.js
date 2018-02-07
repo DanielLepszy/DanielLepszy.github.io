@@ -3,7 +3,7 @@ var focusMusicPlayer = undefined
 function playQuestionFocusMusic() {
     focusMusicPlayer = new Howl({
         src: ['./Sounds/FocusSound.mp3'],
-        autoplay: true,
+        autoplay: false,
         loop: true,
         volume: 0.7
     });
@@ -13,10 +13,9 @@ function playQuestionFocusMusic() {
 function playLastQuestionFocusMusic() {
      focusMusicPlayer = new Howl({
         src: ['./Sounds/lastFocus.mp3'],
-        autoplay: true,
+        autoplay: false,
         loop: true,
-        volume: 0.8,
-       // onend: didEndCallback
+        volume: 0.8
     });
     focusMusicPlayer.play()
 }
@@ -32,7 +31,7 @@ function increaseVolumeQuestionFocusMusic() {
 function playAudio(url, didEndCallback) {
     var sound = new Howl({
         src: [url],
-        autoplay: true,
+        autoplay: false,
         loop: false,
         volume: 0.5,
         onend: didEndCallback

@@ -22,7 +22,7 @@ function subscribeOnCorectAnswerSelected() {
     $('#allAnswers').one('click', onCorrectAnswerSelected);
         setTimeout(function () {
             $("#getAid img").removeClass('blockUsingAid')
-        }, 5000);
+        }, 1000);
 }
 
 function onStartGame() {
@@ -98,7 +98,6 @@ function onCorrectAnswerSelected() {
             currentQuestion = boxOfQuestions.pop();
             if (boxOfQuestions == 0) {
                 playLastQuestionFocusMusic();
-                descreaseVolumeQuestionFocusMusic();
             }
             increaseVolumeQuestionFocusMusic();
             showCurrentAnswers(currentQuestion);
