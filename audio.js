@@ -23,11 +23,12 @@ function playLastQuestionFocusMusic() {
 }
 
 function descreaseVolumeQuestionFocusMusic() {
-    focusMusicPlayer.volume = 0.0;
+    focusMusicPlayer.stop();
 }
 
 function increaseVolumeQuestionFocusMusic() {
-    focusMusicPlayer.volume = 1;
+    //focusMusicPlayer.volume = 1;
+    focusMusicPlayer.play();
 }
 
 function playAudio(url, didEndCallback) {
