@@ -5,13 +5,12 @@ function playQuestionFocusMusic() {
         src: ['./Sounds/FocusSound.mp3'],
         autoplay: true,
         loop: true,
-        volume: 1
+        volume: 0.4
     });
     focusMusicPlayer.play()
 };
 
 function playLastQuestionFocusMusic() {
-    focusMusicPlayer.stop();
     var focusMusicPlayer = new Howl({
         src: ['./Sounds/lastFocus.mp3'],
         autoplay: true,
