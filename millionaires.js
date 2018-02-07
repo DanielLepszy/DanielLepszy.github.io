@@ -20,9 +20,9 @@ beginGame.addEventListener("click", function () {
 });
 function subscribeOnCorectAnswerSelected() {
     $('#allAnswers').one('click', onCorrectAnswerSelected);
-        setTimeout(function () {
-            $("#getAid img").removeClass('blockUsingAid')
-        }, 1000);
+    // setTimeout(function () {
+    //     $("#getAid img").removeClass('blockUsingAid')
+    // }, 1000);
 }
 
 function onStartGame() {
@@ -34,6 +34,7 @@ function onStartGame() {
     });
 };
 function subscribeForLifelines() {
+    $("#getAid img").removeClass('blockUsingAid')
     subscribeForFiftyFiftyLifeline()
     subscribeForPhoneAFriendLifeline()
     subscribeAskAAudienceLifeline()
@@ -51,7 +52,7 @@ function finishGame() {
         $('#allAnswers div').remove();
         $('#getAid').remove();
         $('#toWin').remove();
-        $('body').css({'background':'url(Images/mainBackground.png','background-size':'cover'});
+        $('body').css({ 'background': 'url(Images/mainBackground.png', 'background-size': 'cover' });
         $('#allAnswers').html('<a><img id="myCV" src="Images/pdfCVLogo.png"></a>');
         $('#allAnswers').addClass('rewardsDiv');
         $('#allAnswers img').addClass('imageCV');
@@ -101,7 +102,7 @@ function onCorrectAnswerSelected() {
             }
             increaseVolumeQuestionFocusMusic();
             showCurrentAnswers(currentQuestion);
-            
+
         }
     })
 }
