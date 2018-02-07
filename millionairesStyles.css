@@ -88,7 +88,7 @@ transition: all 0.6s ease-in-out;
     .icon
  {
     transform:scale(0.7,0.7);
-    padding:30px;
+    padding-right:30px;
  }
 }
 /* Finish Game function  */ 
