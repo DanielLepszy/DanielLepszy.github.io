@@ -23,8 +23,7 @@ function playLastQuestionFocusMusic(didEndCallback) {
 }
 
 function descreaseVolumeQuestionFocusMusic() {
-    volume([0],[focusMusicPlayer]);
-    //focusMusicPlayer.volume = 0.0;
+    focusMusicPlayer.volume = 0;
 }
 
 function increaseVolumeQuestionFocusMusic() {
