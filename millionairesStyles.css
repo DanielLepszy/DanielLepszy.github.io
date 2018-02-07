@@ -87,8 +87,7 @@ transition: all 0.6s ease-in-out;
  }
     .icon
  {
-     left:60%;
-     top:300%;
+    transform:scale(0.5,0.5);
  }
 }
 /* Finish Game function  */ 
