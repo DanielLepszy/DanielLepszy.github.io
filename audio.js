@@ -5,7 +5,7 @@ function playQuestionFocusMusic() {
         src: ['./Sounds/FocusSound.mp3'],
         autoplay: true,
         loop: true,
-        volume: 0.4
+        volume: 0.7
     });
     focusMusicPlayer.play()
 };
@@ -22,7 +22,7 @@ function playLastQuestionFocusMusic() {
 }
 
 function descreaseVolumeQuestionFocusMusic() {
-    focusMusicPlayer.stop();
+    focusMusicPlayer.pause();
 }
 
 function increaseVolumeQuestionFocusMusic() {
@@ -34,7 +34,7 @@ function playAudio(url, didEndCallback) {
         src: [url],
         autoplay: true,
         loop: false,
-        volume: 0.2,
+        volume: 0.7,
         onend: didEndCallback
     });
     sound.play();
