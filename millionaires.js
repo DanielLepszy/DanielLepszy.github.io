@@ -97,11 +97,12 @@ function onCorrectAnswerSelected() {
         if (boxOfQuestions.length > 0) {
             currentQuestion = boxOfQuestions.pop();
             if (boxOfQuestions == 0) {
-                playLastQuestionFocusMusic()
+                playLastQuestionFocusMusic();
+                descreaseVolumeQuestionFocusMusic();;
             }
             increaseVolumeQuestionFocusMusic();
             showCurrentAnswers(currentQuestion);
-            descreaseVolumeQuestionFocusMusic();
+            
         }
     })
 }
